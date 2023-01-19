@@ -1,0 +1,50 @@
+C++ is a high-level, general-purpose programming language designed for system and application programming.
+It was created by Bjarne Stroustrup in 1983 as an extension of the C programming language. C++ is an object-oriented programming language,
+which means it is based on the concept of "objects," which can contain data and functions. C++ also supports other programming paradigms,
+such as procedural and generic programming.
+
+One of the key features of C++ is its ability to manage low-level memory, making it a popular choice for system programming and the development of operating systems,
+device drivers, embedded systems, and video games. C++ also has a large standard library, which provides a wide range of useful functions and classes for tasks
+such as input/output, string manipulation, and mathematical operations.
+
+C++ is a compiled language, which means that the source code is translated into machine code by a compiler before it can be executed.
+This process allows for efficient execution of the program, but can also make debugging more difficult. C++ also supports the use of templates,
+which allow for generic programming and the creation of template classes and functions.
+
+C++ has evolved over the years, with the latest version being C++20, which was standardized in 2020. The new version brings new features such as modules,
+coroutines, and concepts, which makes the language more expressive and powerful. Some of the major libraries, frameworks and toolkits written in C++ are STL,
+Boost, Qt, Unreal Engine, OpenCV and many more.
+
+C++ is widely used in various fields such as game development, simulation and modeling, financial applications, and high-performance computing,
+among others. However, it is also a complex and powerful language, which requires a good understanding of programming concepts and a certain level of
+expertise to use effectively.
+
+
+To learn C++, one can follow these steps:
+
+Familiarize yourself with the basics of programming concepts such as variables, data types, control structures, and functions.
+
+Learn the syntax and structure of C++. This can be done through reading an introductory book or tutorial, or by taking an online course.
+
+Understand the principles of object-oriented programming (OOP) and how they are implemented in C++, such as classes, objects, inheritance, and polymorphism.
+
+Practice writing code in C++ by working on small projects or exercises.
+This will help you understand how to use the language to solve problems and apply the conceptsyou've learned.
+
+Learn about the C++ Standard Template Library (STL) which provides a wide range of useful classes and functions for tasks such as input/output,
+string manipulation, and mathematical operations.
+
+Learn how to use debugging tools, such as a debugger, to identify and fix errors in your code.
+
+Learn about advanced C++ features such as templates, exceptions, and the Standard Template Library (STL)
+
+Get involved in a community of C++ developers, such as online forums or user groups, to ask questions, get help, and share your knowledge with others.
+
+Read and Study open source C++ projects to learn from experts.
+
+Keep practicing and experimenting with the language, and take on more complex projects as you gain confidence and experience.
+
+As C++ is a complex and powerful language, it can take time and dedication to master it. Patience and persistence is key to learning this language.
+
+
+"We will creat the subject of lessons as soon as possible"
