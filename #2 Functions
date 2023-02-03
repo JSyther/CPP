@@ -1,0 +1,122 @@
+A function in C++ is a self-contained block of code that performs a specific task. It can take input parameters and return output values, 
+and it can be reused multiple times in the same program. Functions help you organize and structure your code, making it easier to read, write, and maintain.
+
+Here is the basic syntax of a C++ function:
+
+
+return_type function_name(parameter1_type parameter1, parameter2_type parameter2, ...)
+{
+    // function body
+    // statements
+    ...
+    return value;
+}
+
+* return_type: the type of value that the function returns. Use void if the function doesn't return a value.
+* function_name: the name of the function, which must be unique and follow the same rules as a C++ identifier.
+* parameter1_type, parameter2_type, ...: the type of the input parameters, followed by their names. A function may have zero or more parameters.
+* return value: the value returned by the function. The return statement is optional, but if it's used, it must match the return_type of the function.
+Here's an example of a simple function that takes two integer parameters and returns their sum:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int add(int a, int b)
+{
+    int result = a + b;
+    return result;
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+To call a function, simply use its name followed by a list of arguments enclosed in parentheses.
+The arguments must match the parameters in type and order. For example:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int x = 5, y = 6;
+int z = add(x, y);
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+In this example, add(x, y) calls the add function with x and y as arguments, and the result of the function (11) is stored in the variable z.
+
+In C++, functions can also be defined inside other functions, which are called nested functions or inner functions.
+However, inner functions can only be called from within the outer function that contains them.
+
+There are some additional concepts related to functions that you should also know:
+
+Default arguments: you can specify default values for function parameters, which can be overridden by explicit arguments passed to the function. For example:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int add(int a, int b=0)
+{
+    int result = a + b;
+    return result;
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Overloading: you can create multiple functions with the same name, as long as they have different parameter lists. This is called function overloading. For example:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int add(int a, int b)
+{
+    int result = a + b;
+    return result;
+}
+
+double add(double a, double b)
+{
+    double result = a + b;
+    return result;
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Recursion: a function can call itself, which is called recursion.
+This can be useful for solving problems that can be divided into smaller sub-problems of the same kind. For example:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int factorial(int n)
+{
+    if (n == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return n * factorial(n-1);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The function factorial calculates the factorial of a given integer n. The factorial of a number is defined as the product of all positive integers less than or equal to that number. For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
+
+The function starts with a base case: when n is equal to 0, it returns 1 as the result. This base case is important because it ensures that the recursion will eventually stop, otherwise it will keep calling itself indefinitely.
+
+Otherwise, the function returns n multiplied by the factorial of n-1. This means that the function calls itself with n-1 as the argument, effectively reducing the problem to a smaller sub-problem. The recursive calls will keep happening until the base case is reached, and then the results of the recursive calls will be combined to obtain the final result.
+
+In this example, the factorial of 5 would be calculated as follows:
+
+factorial(5) = 5 * factorial(4)
+factorial(4) = 4 * factorial(3)
+factorial(3) = 3 * factorial(2)
+factorial(2) = 2 * factorial(1)
+factorial(1) = 1 * factorial(0)
+factorial(0) = 1 (base case)
+The results of the recursive calls are then combined as follows:
+
+factorial(1) = 1 * 1 = 1
+factorial(2) = 2 * 1 = 2
+factorial(3) = 3 * 2 = 6
+factorial(4) = 4 * 6 = 24
+factorial(5) = 5 * 24 = 120
+So the final result is 120, which is the factorial of 5.
+
+
+Sure! Here's a brief recap of C++ functions:
+
+Functions are reusable blocks of code that perform a specific task and return a value.
+Functions can accept arguments as input and can return a value as output.
+Functions can be declared with a return type and a list of parameters.
+Functions can be called from other parts of the program with the function name and the arguments.
+Functions can be either global or local to a specific block of code.
+Recursion is a technique where a function can call itself to solve a problem, which is useful for problems that can be divided into smaller
+  sub-problems of the same kind.
+The return statement is used to return a value from a function and exit the function. If a function does not return a value,
+  its return type should be declared as void.
+
+
+
+
+
+
+
+
+
