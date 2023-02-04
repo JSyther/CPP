@@ -71,8 +71,6 @@ Conditional Operators:
 ?:: Conditional operator. If the first operand is true, then the result is the second operand, otherwise, it is the third operand.
 Example:
 
-css
-Copy code
 int a = 10, b = 20;
 int c = (a > b) ? a : b;  // c = 20
 Bitwise Operators:
