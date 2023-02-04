@@ -23,7 +23,6 @@ Comparison Operators:
 <=: Checks if the value of the first operand is less than or equal to the second.
 Example:
 
-
 int a = 10, b = 20;
 bool c = (a == b); // false
 bool d = (a != b); // true
