@@ -1,0 +1,94 @@
+C++ provides several types of operators for performing various operations such as arithmetic, comparison, logical, and others. Let's discuss each type in detail:
+
+Arithmetic Operators:
++: Adds two operands.
+-: Subtracts second operand from the first.
+*: Multiply two operands.
+/: Divide the first operand by the second.
+%: Takes modulo using two operands.
+Example:
+
+int a = 10, b = 20;
+int c = a + b; // c = 30
+int d = a - b; // d = -10
+int e = a * b; // e = 200
+int f = b / a; // f = 2
+int g = b % a; // g = 0
+Comparison Operators:
+==: Checks if the values of two operands are equal or not.
+!=: Checks if the values of two operands are not equal.
+>: Checks if the value of the first operand is greater than the second.
+<: Checks if the value of the first operand is less than the second.
+>=: Checks if the value of the first operand is greater than or equal to the second.
+<=: Checks if the value of the first operand is less than or equal to the second.
+Example:
+
+
+int a = 10, b = 20;
+bool c = (a == b); // false
+bool d = (a != b); // true
+bool e = (a > b);  // false
+bool f = (a < b);  // true
+bool g = (a >= b); // false
+bool h = (a <= b); // true
+Logical Operators:
+&&: Logical AND. If both the operands are non-zero, then the condition becomes true.
+||: Logical OR. If any of the two operands is non-zero, then the condition becomes true.
+!: Logical NOT. Reverses the logical state of its operand.
+Example:
+
+int a = 10, b = 20;
+bool c = (a && b); // true
+bool d = (a || b); // true
+bool e = !a;       // false
+Assignment Operators:
+=: Simple assignment operator. Assigns the value of the second operand to the first operand.
++=: Add AND assignment operator. It adds the right operand to the left operand and assigns the result to the left operand.
+-=: Subtract AND assignment operator. It subtracts the right operand from the left operand and assigns the result to the left operand.
+*=: Multiply AND assignment operator. It multiplies the right operand with the left operand and assigns the result to the left operand.
+/=: Divide AND assignment operator. It divides the left operand with the right operand and assigns the result to the left operand.
+%=: Modulo AND assignment operator. It takes modulo using two operands and assigns the result to the left operand.
+Example:
+
+int a = 10, b = 20;
+a = b;      // a = 20
+a += b;     // a = 40
+a -= b;     // a = 20
+a *= b;     // a = 400
+a /= b;     // a = 20
+a %= b;     // a = 0
+Increment and Decrement Operators:
+++: Increments the operand by 1.
+--: Decrements the operand by 1.
+Example:
+
+int a = 10;
+a++;      // a = 11
+a--;      // a = 10
+++a;      // a = 11
+--a;      // a = 10
+Conditional Operators:
+?:: Conditional operator. If the first operand is true, then the result is the second operand, otherwise, it is the third operand.
+Example:
+
+css
+Copy code
+int a = 10, b = 20;
+int c = (a > b) ? a : b;  // c = 20
+Bitwise Operators:
+&: Bitwise AND.
+|: Bitwise OR.
+^: Bitwise XOR.
+~: Bitwise NOT.
+<<: Left shift.
+>>: Right shift.
+Example:
+
+int a = 10, b = 20;
+int c = a & b;    // c = 0
+int d = a | b;    // d = 30
+int e = a ^ b;    // e = 30
+int f = ~a;       // f = -11
+int g = a << 1;   // g = 20
+int h = a >> 1;   // h = 5
+This is a comprehensive list of the different types of operators available in C++ with examples.
