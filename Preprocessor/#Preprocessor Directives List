@@ -1,0 +1,18 @@
+#define: Used to define a macro. A macro is a symbolic name that represents a value or a code snippet.
+#elif: Used to add an additional condition to an #if or #ifdef block of code. It is equivalent to writing else if.
+#else: Used in conjunction with #if or #ifdef to specify an alternative block of code to execute if the condition is not met.
+#endif: Used to close an #if, #ifdef, or #ifndef block of code.
+#error: Used to generate a compile-time error message with a user-specified message.
+#if: Used to conditionally compile code based on a preprocessor macro.
+#ifdef: Used to conditionally compile code if a preprocessor macro has been defined.
+#ifndef: Used to conditionally compile code if a preprocessor macro has not been defined.
+#import: A Microsoft-specific directive that is used to import type libraries and other binary components.
+#include: Used to include header files in the source code.
+#line: Used to change the line number and file name that appear in diagnostic messages.
+#pragma: Used to provide additional information to the compiler, such as optimization hints, warning suppression, or alignment specifications.
+#undef: Used to undefine a previously defined macro.
+#using: A Microsoft-specific directive that is used to reference a .NET assembly.
+
+Preprocessor directives are instructions that are processed by the compiler before the actual compilation process begins. 
+They are used to conditionally compile code, define macros, and include header files in the source code. 
+Understanding how to use these directives effectively can help you to write more efficient and maintainable code.
