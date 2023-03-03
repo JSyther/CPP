@@ -1,0 +1,94 @@
+alignas       : Specifies the alignment of a variable or a type.
+alignof       : Returns the required alignment of a type.
+and, and_eq   : Logical AND operators.
+asm           : Used to embed assembly language code into C++ programs.
+auto          : Used to automatically determine the type of a variable.
+bitand, bitor : Bitwise AND and OR operators.
+bool          : Boolean type, which can have values of true or false.
+break         : Used to exit a loop or switch statement.
+case          : Used to specify a condition in a switch statement.
+catch         : Used to handle exceptions.
+
+char, char8_t,
+char16_t, 
+char32_t      : Character types.
+
+class         : Used to define a class.
+compl         : Bitwise NOT operator.
+concept       : Used to specify requirements on template arguments.
+const         : Specifies that a variable or function cannot be modified.
+const_cast    : Used to remove the const or volatile qualification of a variable.
+consteval     : Specifies that a function is evaluated at compile-time.
+constexpr     : Specifies that a function or variable is evaluated at compile-time.
+constinit     : Specifies that a variable must be initialized before its first use.
+continue      : Used to skip to the next iteration of a loop.
+
+co_await,
+co_return,
+co_yield      : Used in conjunction with coroutines.
+
+decltype      : Returns the type of an expression.
+default       : Used in a switch statement to specify the default case.
+delete        : Used to delete a function or a variable.
+do            : Used to specify a do-while loop.
+double        : Double-precision floating-point type.
+dynamic_cast  : Used to cast between related types at runtime.
+else          : Used to specify an alternative block of code to execute if a condition is not met.
+enum          : Used to define an enumerated type.
+explicit      : Used to specify that a constructor is explicit.
+export        : Specifies that a template or inline function should be made available to other translation units.
+extern        : Used to declare an external variable or function.
+false         : Boolean value that represents false.
+float         : Single-precision floating-point type.
+for           : Used to specify a loop that iterates a specified number of times.
+friend        : Used to give access to private members of a class.
+goto          : Used to jump to a labeled statement.
+if            : Used to specify a condition that must be met in order for a block of code to be executed.
+inline        : Specifies that a function should be inlined.
+int           : Integer type.
+long          : Long integer type.
+mutable       : Specifies that a member variable of a class can be modified, even if the class itself is const.
+namespace     : Used to define a namespace.
+new           : Used to allocate memory dynamically.
+noexcept      : Specifies that a function will not throw any exceptions.
+not, not_eq   : Logical NOT and NOT EQUAL TO operators.
+nullptr       : Null pointer value.
+operator      : Used to overload operators.
+or, or_eq     : Logical OR and OR EQUAL TO operators.
+private       : Used in class declarations to specify that the following members are accessible only within the same class and its friend functions.
+protected     : Used in class declarations to specify that the following members are accessible within the same class, its derived classes, and its friend functions.
+public        : Used in class declarations to specify that the following members are accessible anywhere in the program.
+register      : A keyword used to request that a variable be stored in a register for faster access. The compiler may ignore the request if it is unable to allocate a register.
+reinterpret_cast: A type of type conversion that allows a pointer of one type to be converted into a pointer of another type, without changing the actual data. This is a potentially dangerous operation and should be used with caution.
+requires (C++20): A keyword used to specify a set of constraints that a template argument must satisfy.
+return        : Used in functions to specify the value that should be returned when the function is called.
+short         : A data type that can hold integer values within a smaller range than the int type.
+signed        : Used to indicate that a variable or data type can have negative values.
+sizeof        : A keyword used to determine the size, in bytes, of a variable or data type.
+static        : Used to specify that a variable or function should be bound to the class, rather than to an instance of the class. A static variable or function can be accessed without creating an instance of the class.
+static_assert : A keyword used to perform a compile-time assertion on a condition.
+static_cast   : A type of type conversion that allows a variable of one type to be converted into a variable of another type. This is a safe operation as long as the types are compatible.
+struct        : A keyword used to define a structure, which is a collection of variables that can have different data types.
+switch        : A keyword used to define a switch statement, which allows different code blocks to be executed based on the value of a variable.
+template      : A keyword used to define a template, which is a generic data type or function that can be used with different data types.
+this          : A keyword used within a class to refer to the current object.
+thread_local  : A keyword used to specify that a variable should have thread-local storage, meaning each thread will have its own copy of the variable.
+throw         : Used to generate an exception in response to an error condition.
+true          : A keyword used to represent a boolean true value.
+try           : Used to begin a block of code that is expected to generate an exception.
+typedef       : Used to create an alias for an existing data type.
+typeid        : Used to obtain information about a type at runtime.
+typename      : Used to specify that a dependent type name refers to a type.
+union         : A keyword used to define a union, which is a data type that can store different types of data in the same memory location.
+unsigned      : Used to indicate that a variable or data type can only have non-negative values.
+using declaration: Used to bring a specific symbol from a namespace into the current scope.
+using directive: Used to bring all symbols from a namespace into the current scope.
+virtual       : Used to specify that a function is virtual, meaning it can be overridden by a derived class.
+void          : Used to specify that a function does not return a value.
+volatile      : Used to indicate that a variable can be modified unexpectedly, such as by an interrupt service routine or a hardware device.
+wchar_t       : A data type used to represent wide characters, which can be used to support non-ASCII character sets.
+while         : A looping construct in C++ that executes a block of code repeatedly as long as a given condition is true.
+xor and xor_eq: Bitwise exclusive OR (XOR) operators in C++. xor performs the logical XOR operation on two operands,
+                while xor_eq performs the XOR operation and assigns the result to the left-hand operand. These operators are used to manipulate
+                individual bits within integer types. For example, a ^ b will return an integer where each bit is 1 if the corresponding bits in a and b are different,
+                and 0 otherwise. Similarly, a ^= b will modify the bits in a to be the result of the XOR operation with b.
