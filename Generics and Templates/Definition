@@ -1,0 +1,81 @@
+C++, generics are implemented using templates. Templates allow you to define generic classes and functions that can work with different data types.
+
+An example of a template function that finds the maximum of two values:
+------------------------------
+template <typename T>
+T max(T a, T b) {
+    return (a > b) ? a : b;
+}
+------------------------------
+
+In this example, the template keyword is used to define a template function that takes a type parameter T.
+The function takes two parameters of type T and returns the maximum of the two.
+
+You can use this function with different data types. For example, you could use it to find the maximum of two integers like this:
+------------------------------
+int a = 10;
+int b = 20;
+int result = max(a, b);
+------------------------------
+Or you could use it to find the maximum of two floating-point numbers like this:
+
+------------------------------
+double c = 3.14;
+double d = 2.71;
+double result = max(c, d);
+------------------------------
+
+Templates can also be used to define generic classes. Here's an example of a template class that implements a stack:
+------------------------------------------------------------
+template <typename T>
+class Stack {
+public:
+    Stack();
+    void push(T value);
+    T pop();
+    bool is_empty();
+private:
+    std::vector<T> data;
+};
+
+template <typename T>
+Stack<T>::Stack() {}
+
+template <typename T>
+void Stack<T>::push(T value) {
+    data.push_back(value);
+}
+
+template <typename T>
+T Stack<T>::pop() {
+    T value = data.back();
+    data.pop_back();
+    return value;
+}
+
+template <typename T>
+bool Stack<T>::is_empty() {
+    return data.empty();
+}
+------------------------------------------------------------
+In this example, the Stack class is defined using a type parameter T. 
+The class has four methods: a constructor, push, pop, and is_empty. 
+The push method takes a value of type T and adds it to the stack.
+The pop method removes the top value from the stack and returns it.
+The is_empty method returns true if the stack is empty.
+
+You can use this template class with different data types.
+For example, you could create a stack of integers like this:
+
+------------------------------------------------------------
+Stack<int> int_stack;
+------------------------------------------------------------
+
+
+Or you could create a stack of strings like this:
+------------------------------------------------------------
+Stack<std::string> string_stack;
+------------------------------------------------------------
+
+Templates are a powerful feature of C++ that allow you to write generic code that can work with different data types.
+By defining a template class or function, you can write code that works with any type that supports the operations you need.
