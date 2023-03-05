@@ -9,9 +9,11 @@ T max(T a, T b) {
 ------------------------------
 
 In this example, the template keyword is used to define a template function that takes a type parameter T.
-The function takes two parameters of type T and returns the maximum of the two.
+The function takes two parameters of type T and returns the maximum of the two with calculating ternary operation.
 
-You can use this function with different data types. For example, you could use it to find the maximum of two integers like this:
+You can use this function with different data types. 
+
+For example, you could use it to find the maximum of two integers like this:
 ------------------------------
 int a = 10;
 int b = 20;
@@ -25,7 +27,9 @@ double d = 2.71;
 double result = max(c, d);
 ------------------------------
 
-Templates can also be used to define generic classes. Here's an example of a template class that implements a stack:
+Templates can also be used to define generic classes.
+
+Here's an example of a template class that implements a stack:
 ------------------------------------------------------------
 template <typename T>
 class Stack {
