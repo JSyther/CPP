@@ -1,0 +1,89 @@
+In C++, "this" is a keyword that represents a pointer to the current instance of a class. 
+It can be used to refer to the members of the class, including member variables and member functions.
+
+When you create an instance of a class, it is stored in memory, and this is a pointer to that memory location.
+This allows you to access the data and methods of the class from within the class itself, using the this keyword.
+
+For example, consider the following code snippet:
+
+class MyClass {
+public:
+  void setValue(int value) {
+    this->value = value;
+  }
+private:
+  int value;
+};
+
+In this code, this->value refers to the value member variable of the current instance of the MyClass class.
+The setValue method takes an integer argument and assigns it to the value member variable using the this pointer.
+
+In other words, this is a way to refer to the current object in a class, which can be useful in cases where you have multiple instances
+of the same class and need to keep track of which instance you are currently working with.
+
+
+An another examples: 
+1. Avoiding naming conflicts:
+
+One common use of "this" is to avoid naming conflicts. 
+For example, if you have a member variable with the same name as a parameter in a function, you can use "this" to specify that you want to use the member
+variable instead of the parameter. 
+
+Here's an example:
+
+class MyClass {
+public:
+    void SetMyInt(int myInt) {
+        this->myInt = myInt;
+    }
+private:
+    int myInt;
+};
+
+In this example, "this" is used to specify that we want to assign the value of the "myInt" parameter to the "myInt" member variable.
+
+
+2. Returning the object itself:
+Another use of "this" is to return a pointer to the object itself from a member function. 
+This can be useful when you want to chain multiple member function calls together. 
+
+Here's an example:
+
+class MyClass {
+public:
+    MyClass& DoSomething() {
+        // Do something here...
+        return *this;
+    }
+};
+
+In this example, the "DoSomething" function returns a reference to the object itself using "return *this",
+allowing us to chain multiple "DoSomething" calls together like this:
+
+MyClass myObject;
+myObject.DoSomething().DoSomething().DoSomething();
+
+
+3. Passing the object as a parameter:
+Finally, "this" can be used to pass the object itself as a parameter to another function. 
+This can be useful when you want to pass the object to a function that requires a pointer to the object, such as a callback function. Here's an example:
+
+class MyClass {
+public:
+    void DoSomethingWithCallback(void (*callback)(MyClass*)) {
+        callback(this);
+    }
+};
+
+In this example, the "DoSomethingWithCallback" function takes a function pointer as a parameter that requires a pointer to a MyClass object.
+We use "this" to pass a pointer to the object itself to the callback function.
+
+You can find more information about the "this" keyword in C++ on the official Microsoft documentation page:
+
+https://docs.microsoft.com/en-us/cpp/cpp/this-pointer?view=msvc-160
+
+Kepp in mind when using "this" keyword: Always use "this" keyword when there is a naming conflict between a member variable
+and a method parameter, to avoid unintended behavior and ensure that the correct variable is being accessed.
+
+
+
