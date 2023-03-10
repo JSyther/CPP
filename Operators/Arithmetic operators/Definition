@@ -1,0 +1,14 @@
+Arithmetic operators in C++ are used to perform mathematical operations on numeric values. 
+There are five basic arithmetic operators in C++:
+
+Addition (+)        : used to add two values together.
+Subtraction (-)     : used to subtract one value from another.
+Multiplication (*)  : used to multiply two values together.
+Division (/)        : used to divide one value by another.
+Modulus (%)         : used to find the remainder after division.
+
+In addition to these basic arithmetic operators, C++ also provides some shorthand operators that combine an arithmetic operation with an assignment operation. 
+For example, += is equivalent to a = a + b, where a and b are variables.
+
+It's important to note that arithmetic operators follow the usual rules of arithmetic,
+such as the order of operations (parentheses first, then multiplication and division, then addition and subtraction) and the fact that division by zero is undefined.
