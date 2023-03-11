@@ -1,0 +1,79 @@
+The dynamic_cast operator is a C++ language construct used for type casting. 
+It is used to convert a pointer or reference of one class type to another class type. 
+dynamic_cast is mostly used with polymorphic classes, which have at least one virtual function.
+It allows runtime type checking to ensure the conversion is valid and safe.
+
+Here is the general syntax of dynamic_cast:
+--------------------------------------------
+|    dynamic_cast<new_type>(expression)    |
+--------------------------------------------
+
+where new_type is the target type to which we want to cast the expression, and expression is the pointer or reference that we want to cast.
+
+The dynamic_cast operator performs the following checks during runtime:
+
+It checks if the type of the expression is a polymorphic class type.
+If the expression is null, the result of the dynamic_cast expression is a null pointer or reference of the target type.
+If the expression is not null, dynamic_cast checks if the expression can be converted to the target type.
+If the conversion is possible, dynamic_cast returns a pointer or reference to the target type. If the conversion is not possible, dynamic_cast returns 
+a null pointer or reference.
+
+Here is an example to illustrate the usage of dynamic_cast:
+
+----------------------------------------------------------------------------------------
+class Base {
+public:
+    virtual void print() {
+        cout << "This is a Base class." << endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    void print() {
+        cout << "This is a Derived class." << endl;
+    }
+};
+
+int main() {
+    Base* ptr = new Derived;
+    Derived* ptr2 = dynamic_cast<Derived*>(ptr);
+    if (ptr2 != nullptr) {
+        ptr2->print();
+    }
+    else {
+        cout << "Cannot cast from Base* to Derived*." << endl;
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------------
+
+In the above example, we have two classes: Base and Derived.
+Derived is derived from Base and overrides the print function. 
+In the main function, we create a Base pointer and assign it to a Derived object. 
+We then use dynamic_cast to cast the Base pointer to a Derived pointer.
+If the cast is successful, we call the print function of Derived.
+If the cast is not successful, we print an error message.
+
+The output of this code will be:
+|------------------------|
+|This is a Derived class.|
+|------------------------|
+
+Here's what the code does again:
+
+It defines two classes: Base and Derived. Derived is derived from Base.
+The print() function is defined in both classes. Derived overrides the print() function from Base.
+In main(), a Base pointer ptr is created and assigned to a new Derived object using new.
+dynamic_cast is used to attempt to cast ptr to a Derived pointer ptr2.
+Since ptr points to a Derived object, the cast is successful and ptr2 points to the same object as ptr.
+ptr2->print() is called, which calls the print() function of Derived because ptr2 is a Derived pointer.
+The output "This is a Derived class." is printed to the console.
+Note that dynamic_cast returns a null pointer if the cast fails. 
+In this case, the cast succeeds, so the else branch of the if statement is not executed.
+
+For further information and more detailed explanations on the dynamic_cast operator, 
+it is recommended that students and individuals refer to the official documentation provided by Microsoft. 
+Please follow the link below to access this resource:
+
+https://learn.microsoft.com/en-us/cpp/cpp/dynamic-cast-operator?view=msvc-170
