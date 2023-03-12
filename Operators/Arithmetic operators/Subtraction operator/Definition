@@ -1,0 +1,15 @@
+The subtraction operator (-) in C++ is an arithmetic operator used to subtract one value from another. 
+It is a binary operator, meaning it operates on two operands.
+The result of the subtraction operation is a value that represents the difference between the two operands.
+
+The subtraction operator can be used with a variety of data types, including integers, floating-point numbers, and other numeric types. 
+When used with integers, the result of the operation will be an integer, while with floating-point numbers, the result will be a floating-point number.
+
+An example of using the subtraction operator to subtract one integer from another
+
+int a = 10;
+int b = 5;
+int c = a - b; // c is now 5 (the result of the subtraction operation)
+
+
+In this example, the value of a is subtracted from the value of b, resulting in a value of 5 that is stored in the variable c.
