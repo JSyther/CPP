@@ -1,0 +1,67 @@
+Subtracting two integers:
+
+int a = 10;
+int b = 5;
+int c = a - b; // c is 5
+
+
+Subtracting two floating-point numbers:
+
+float x = 3.14;
+float y = 1.23;
+float z = x - y; // z is 1.91
+
+
+Subtracting two complex numbers:
+
+#include <iostream>
+#include <complex>
+
+int main() {
+    std::complex<double> a(2.0, 3.0);
+    std::complex<double> b(1.0, 2.0);
+    std::complex<double> c = a - b; // c is (1.0, 1.0)
+    std::cout << "Result: " << c << std::endl;
+    return 0;
+}
+
+Subtracting a complex number from a real number:
+
+#include <iostream>
+#include <complex>
+
+int main() {
+    double a = 5.0;
+    std::complex<double> b(2.0, 1.0);
+    std::complex<double> c = a - b; // c is (3.0, -1.0)
+    std::cout << "Result: " << c << std::endl;
+    return 0;
+}
+
+Subtracting a real number from a complex number:
+
+#include <iostream>
+#include <complex>
+
+int main() {
+    double a = 5.0;
+    std::complex<double> b(2.0, 1.0);
+    std::complex<double> c = b - a; // c is (-3.0, 1.0)
+    std::cout << "Result: " << c << std::endl;
+    return 0;
+}
+
+Subtracting the real and imaginary parts of two complex numbers separately:
+
+#include <iostream>
+#include <complex>
+
+int main() {
+    std::complex<double> a(2.0, 3.0);
+    std::complex<double> b(1.0, 2.0);
+    double realPart = std::real(a) - std::real(b); // realPart is 1.0
+    double imagPart = std::imag(a) - std::imag(b); // imagPart is 1.0
+    std::complex<double> c(realPart, imagPart); // c is (1.0, 1.0)
+    std::cout << "Result: " << c << std::endl;
+    return 0;
+}
