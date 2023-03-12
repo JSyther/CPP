@@ -1,0 +1,172 @@
+Group 1 precedence, no associativity		
+Scope resolution	::	
+
+Group 2 precedence, left to right associativity		
+Member selection (object or pointer)	. or ->	
+Array subscript	[]	
+Function call	()	
+Postfix increment	++	
+Postfix decrement	--	
+Type name	typeid	
+Constant type conversion	const_cast	
+Dynamic type conversion	dynamic_cast	
+Reinterpreted type conversion	reinterpret_cast	
+Static type conversion	static_cast	
+
+Group 3 precedence, right to left associativity		
+Size of object or type	sizeof	
+Prefix increment	++	
+Prefix decrement	--	
+One's complement	~	compl
+Logical not	!	not
+Unary negation	-	
+Unary plus	+	
+Address-of	&	
+Indirection	*	
+Create object	new	
+Destroy object	delete	
+Cast	()	
+
+Group 4 precedence, left to right associativity		
+Pointer-to-member (objects or pointers)	.* or ->*	
+
+Group 5 precedence, left to right associativity		
+Multiplication	*	
+Division	/	
+Modulus	%	
+
+Group 6 precedence, left to right associativity		
+Addition	+	
+Subtraction	-	
+
+Group 7 precedence, left to right associativity		
+Left shift	<<	
+Right shift	>>	
+
+Group 8 precedence, left to right associativity		
+Less than	<	
+Greater than	>	
+Less than or equal to	<=	
+Greater than or equal to	>=	
+
+Group 9 precedence, left to right associativity		
+Equality	==	
+Inequality	!=	not_eq
+
+Group 10 precedence left to right associativity		
+Bitwise AND	&	bitand
+
+Group 11 precedence, left to right associativity		
+Bitwise exclusive OR	^	xor
+
+Group 12 precedence, left to right associativity		
+Bitwise inclusive OR	|	bitor
+
+Group 13 precedence, left to right associativity		
+Logical AND	&&	and
+
+Group 14 precedence, left to right associativity		
+Logical OR	||	or
+
+Group 15 precedence, right to left associativity		
+Conditional	? :	
+Assignment	=	
+Multiplication assignment	*=	
+Division assignment	/=	
+Modulus assignment	%=	
+Addition assignment	+=	
+Subtraction assignment	-=	
+Left-shift assignment	<<=	
+Right-shift assignment	>>=	
+Bitwise AND assignment	&=	and_eq
+Bitwise inclusive OR assignment	|=	or_eq
+Bitwise exclusive OR assignment	^=	xor_eq
+throw expression	throw	
+
+Group 16 precedence, left to right associativity		
+Comma	,	
+
+Arithmetic Operators: Operators used to perform basic arithmetic operations such as addition, subtraction, multiplication, division, modulus, and increment/decrement.
+
+(addition) - performs addition
+(subtraction) - performs subtraction
+(multiplication) - performs multiplication
+/ (division) - performs division
+% (modulus) - returns the remainder after division
+++ (increment) - increases the value of a variable by 1
+-- (decrement) - decreases the value of a variable by 1
+Assignment Operators: Operators used to assign a value to a variable.
+
+= (assignment) - assigns the value on the right to the variable on the left
++= (addition assignment) - adds the value on the right to the variable on the left and assigns the result
+-= (subtraction assignment) - subtracts the value on the right from the variable on the left and assigns the result
+*= (multiplication assignment) - multiplies the value on the right with the variable on the left and assigns the result
+/= (division assignment) - divides the variable on the left by the value on the right and assigns the result
+%= (modulus assignment) - performs modulus operation on the variable on the left with the value on the right and assigns the result
+
+Comparison Operators: Operators used to compare two values and return a boolean result (true or false).
+
+== (equal to) - checks if two values are equal
+!= (not equal to) - checks if two values are not equal
+
+(greater than) - checks if the value on the left is greater than the value on the right
+< (less than) - checks if the value on the left is less than the value on the right
+= (greater than or equal to) - checks if the value on the left is greater than or equal to the value on the right
+<= (less than or equal to) - checks if the value on the left is less than or equal to the value on the right
+
+Logical Operators: Operators used to perform logical operations on boolean values.
+
+&& (logical and) - returns true if both values are true
+|| (logical or) - returns true if at least one of the values is true
+! (logical not) - reverses the boolean value
+
+Bitwise Operators: Operators used to perform operations on binary values.
+
+& (bitwise and) - performs bitwise and operation on the binary values
+| (bitwise or) - performs bitwise or operation on the binary values
+^ (bitwise xor) - performs bitwise xor operation on the binary values
+~ (bitwise not) - performs bitwise not operation on the binary values
+<< (left shift) - shifts the binary value to the left by a specified number of bits
+
+(right shift) - shifts the binary value to the right by a specified number of bits
+
+Conditional Operators: Operators used to perform conditional operations.
+
+?: (ternary operator) - evaluates a condition and returns one of two possible values based on the result of the condition
+
+Other Operators:
+
+& (address of) - returns the memory address of a variable
+
+(dereference) - returns the value at the memory address of a pointer variable
+sizeof - returns the size of a variable in bytes
+, (comma) - separates multiple expressions in a single statement
+() (function call) - calls a function with specified arguments
+[] (subscript) - accesses an element of an array or a member of a
+
+Pointer Operators: Operators used to work with pointers.
+
+& (address of) - returns the memory address of a variable
+
+(dereference) - returns the value at the memory address of a pointer variable
+Member Access Operators: Operators used to access members of a class or structure.
+
+. (dot operator) - accesses a member of a structure or class using the member name
+-> (arrow operator) - accesses a member of a structure or class using a pointer to the structure or class
+
+Type Operators: Operators used to work with types.
+
+typeid - returns a reference to a type_info object that represents the type of an expression or a type-id
+dynamic_cast - converts a pointer or reference to a base class to a pointer or reference to a derived class
+static_cast - performs a non-polymorphic cast between related types
+const_cast - removes constness or volatility from an expression
+
+Other Operators:
+
+, (comma operator) - evaluates multiple expressions and returns the result of the last one
+() (function call operator) - calls a function with specified arguments
+[] (subscript operator) - accesses an element of an array or a member of a class or structure
+new - dynamically allocates memory for an object or an array of objects
+delete - frees the memory allocated by new for an object or an array of objects
+
+These are the most commonly used operators in C++. Understanding the behavior of these operators is essential to writing correct and efficient C++ programs.
