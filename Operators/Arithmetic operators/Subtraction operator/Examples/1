@@ -45,8 +45,8 @@ int z = pY - pX; // z will be 2
 8. Subtracting the value of a pointer from an integer:
 
 int myArray[5] = {1, 2, 3, 4, 5};
-int* pX = &myArray[2];
-int z = pX - 2; // z will be 0
+int pX = myArray[2];
+int z = pX - 2; // z will be 1
 
 9. Subtracting the value of a pointer from a constant integer:
 
