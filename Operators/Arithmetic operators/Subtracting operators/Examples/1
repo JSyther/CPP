@@ -1,0 +1,65 @@
+1. Subtracting two integer variables:
+
+int x = 10;
+int y = 5;
+int z = x - y; // z will be 5
+
+2. Subtracting two double variables:
+
+double a = 3.14;
+double b = 1.618;
+double c = a - b; // c will be 1.522
+
+3. Subtracting a constant from a variable:
+
+int x = 10;
+int y = x - 3; // y will be 7
+
+4. Subtracting a variable from a constant:
+
+int x = 10;
+int y = 3 - x; // y will be -7
+
+5. Subtracting the value of an array element from a variable:
+
+int myArray[5] = {1, 2, 3, 4, 5};
+int x = 10;
+int y = x - myArray[2]; // y will be 7
+
+6. Subtracting the result of a function call from a variable:
+
+int square(int x) {
+    return x * x;
+}
+
+int x = 10;
+int y = x - square(3); // y will be 1
+
+7. Subtracting the value of a pointer from another pointer:
+
+int myArray[5] = {1, 2, 3, 4, 5};
+int* pX = &myArray[1];
+int* pY = &myArray[3];
+int z = pY - pX; // z will be 2
+
+8. Subtracting the value of a pointer from an integer:
+
+int myArray[5] = {1, 2, 3, 4, 5};
+int* pX = &myArray[2];
+int z = pX - 2; // z will be 0
+
+9. Subtracting the value of a pointer from a constant integer:
+
+int myArray[5] = {1, 2, 3, 4, 5};
+int* pX = &myArray[3];
+int z = 5 - pX; // z will be 1
+
+10. Subtracting the value of a pointer from a constant pointer:
+
+int myArray[5] = {1, 2, 3, 4, 5};
+int* pX = &myArray[2];
+int* pY = &myArray[4];
+int z = pY - pX; // z will be 2
+
+Note that in examples 7-10, the subtraction operator is used to compute the distance between two memory locations (i.e., pointers),
+rather than performing a numerical subtraction of values.
