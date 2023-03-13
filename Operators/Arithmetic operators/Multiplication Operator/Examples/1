@@ -55,7 +55,11 @@ complex<double> x(1.0, 2.0);
 complex<double> y(3.0, 4.0);
 complex<double> z = x * y; // z will be (-5, 10)
 
+// Formula == x * y = (1.0 + 2.0i) * (3.0 + 4.0i)
+                    = (1.0 * 3.0 - 2.0 * 4.0) + (1.0 * 4.0 + 2.0 * 3.0)i
+                     = -5.0 + 10.0i = (-5, 10)
 
+------------------------------------------------------------------------------------------------------------------------------
 Multiply a matrix by a scalar:
 
 #include <iostream>
@@ -75,6 +79,55 @@ int main() {
     //         6 8
     return 0;
 }
+
+Explanation:
+
+We define the main function.
+
+We declare a 2x2 matrix matrix and initialize it with the values {1, 2} and {3, 4}.
+
+We declare an integer variable scalar and set its value to 2.
+
+We start a nested loop that iterates through each element of the matrix.
+
+The outer loop uses the variable i to iterate over the rows of the matrix.
+
+The inner loop uses the variable j to iterate over the columns of the matrix.
+
+For each element of the matrix, we multiply its value by the scalar value using the *= operator.
+This is equivalent to multiplying the element by the scalar and storing the result back in the element.
+
+We output the new value of the element to the console using cout.
+
+After we finish iterating over all elements in a row, we output a newline character to the console to move to the next row.
+
+After we finish iterating over all elements in the matrix, we exit the nested loop.
+
+We return 0 to indicate successful program completion.
+
+Now, let's break down the mathematical operations that are happening in the loop:
+
+We start with the matrix:
+
+[1 2]
+[3 4]
+We set the scalar value to 2.
+
+We multiply each element of the matrix by the scalar value:
+
+
+[1 * 2  2 * 2]
+[3 * 2  4 * 2]
+This gives us:
+
+
+[2  4]
+[6  8]
+We output each element of the resulting matrix to the console, separated by spaces:
+
+2 4
+6 8
+------------------------------------------------------------------------------------------------------------------------------
 
 
 Use the multiplication operator with a user-defined class:
