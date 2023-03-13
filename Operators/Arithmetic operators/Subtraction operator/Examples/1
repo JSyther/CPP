@@ -1,67 +1,65 @@
-Subtracting two integers:
+1. Subtracting two integer variables:
 
-int a = 10;
-int b = 5;
-int c = a - b; // c is 5
+int x = 10;
+int y = 5;
+int z = x - y; // z will be 5
 
+2. Subtracting two double variables:
 
-Subtracting two floating-point numbers:
+double a = 3.14;
+double b = 1.618;
+double c = a - b; // c will be 1.522
 
-float x = 3.14;
-float y = 1.23;
-float z = x - y; // z is 1.91
+3. Subtracting a constant from a variable:
 
+int x = 10;
+int y = x - 3; // y will be 7
 
-Subtracting two complex numbers:
+4. Subtracting a variable from a constant:
 
-#include <iostream>
-#include <complex>
+int x = 10;
+int y = 3 - x; // y will be -7
 
-int main() {
-    std::complex<double> a(2.0, 3.0);
-    std::complex<double> b(1.0, 2.0);
-    std::complex<double> c = a - b; // c is (1.0, 1.0)
-    std::cout << "Result: " << c << std::endl;
-    return 0;
+5. Subtracting the value of an array element from a variable:
+
+int myArray[5] = {1, 2, 3, 4, 5};
+int x = 10;
+int y = x - myArray[2]; // y will be 7
+
+6. Subtracting the result of a function call from a variable:
+
+int square(int x) {
+    return x * x;
 }
 
-Subtracting a complex number from a real number:
+int x = 10;
+int y = x - square(3); // y will be 1
 
-#include <iostream>
-#include <complex>
+7. Subtracting the value of a pointer from another pointer:
 
-int main() {
-    double a = 5.0;
-    std::complex<double> b(2.0, 1.0);
-    std::complex<double> c = a - b; // c is (3.0, -1.0)
-    std::cout << "Result: " << c << std::endl;
-    return 0;
-}
+int myArray[5] = {1, 2, 3, 4, 5};
+int* pX = &myArray[1];
+int* pY = &myArray[3];
+int z = pY - pX; // z will be 2
 
-Subtracting a real number from a complex number:
+8. Subtracting the value of a pointer from an integer:
 
-#include <iostream>
-#include <complex>
+int myArray[5] = {1, 2, 3, 4, 5};
+int* pX = &myArray[2];
+int z = pX - 2; // z will be 0
 
-int main() {
-    double a = 5.0;
-    std::complex<double> b(2.0, 1.0);
-    std::complex<double> c = b - a; // c is (-3.0, 1.0)
-    std::cout << "Result: " << c << std::endl;
-    return 0;
-}
+9. Subtracting the value of a pointer from a constant integer:
 
-Subtracting the real and imaginary parts of two complex numbers separately:
+int myArray[5] = {1, 2, 3, 4, 5};
+int* pX = &myArray[3];
+int z = 5 - pX; // z will be 1
 
-#include <iostream>
-#include <complex>
+10. Subtracting the value of a pointer from a constant pointer:
 
-int main() {
-    std::complex<double> a(2.0, 3.0);
-    std::complex<double> b(1.0, 2.0);
-    double realPart = std::real(a) - std::real(b); // realPart is 1.0
-    double imagPart = std::imag(a) - std::imag(b); // imagPart is 1.0
-    std::complex<double> c(realPart, imagPart); // c is (1.0, 1.0)
-    std::cout << "Result: " << c << std::endl;
-    return 0;
-}
+int myArray[5] = {1, 2, 3, 4, 5};
+int* pX = &myArray[2];
+int* pY = &myArray[4];
+int z = pY - pX; // z will be 2
+
+Note that in examples 7-10, the subtraction operator is used to compute the distance between two memory locations (i.e., pointers),
+rather than performing a numerical subtraction of values.
