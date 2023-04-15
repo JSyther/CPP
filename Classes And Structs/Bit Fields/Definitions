@@ -50,3 +50,6 @@ By using bit fields in your programs, you can reduce memory usage, improve code 
 
 I hope this article helps to clarify the concept of bit fields in C++ and provides a useful resource for learning and using this feature
 in your own programming projects.
+
+For more information:
+https://learn.microsoft.com/en-us/cpp/cpp/cpp-bit-fields?view=msvc-170
