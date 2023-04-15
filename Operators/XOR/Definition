@@ -1,0 +1,28 @@
+The XOR operator, also known as the exclusive OR operator, is a logical operator in many programming languages including C++.
+It returns a true value (1) if and only if the operands have different boolean values.
+
+In C++, the XOR operator is represented by the caret (^) symbol. It is a binary operator, meaning it takes two operands.
+The expression a ^ b returns a true value if a and b have different boolean values, and a false value (0) otherwise.
+
+Here is a truth table that shows the result of applying the XOR operator to two boolean operands:
+
+Operand 1	    Operand 2	    Result
+false	        false	        false
+false	        true	        true
+true	        false	        true
+true	        true	        false
+
+In C++, the XOR operator can also be used with integers. 
+When applied to integers, it performs a bitwise XOR operation, meaning it compares the corresponding bits in the two operands and returns
+a result where each bit is set to 1 if and only if the corresponding bits in the operands are different.
+
+Here is an example of using the XOR operator with integers:
+-----------------------------------------------------------
+int a = 5;   // binary: 101
+int b = 3;   // binary: 011
+int c = a ^ b;  // binary: 110 (decimal: 6)
+-----------------------------------------------------------
+In this example, the XOR operator is used to compute the bitwise XOR of the binary representations of a and b, 
+resulting in the binary number 110, which is equivalent to the decimal number 6.
+
+The XOR operator is often used in programming to perform various tasks such as encryption, error detection and correction, and data compression.
